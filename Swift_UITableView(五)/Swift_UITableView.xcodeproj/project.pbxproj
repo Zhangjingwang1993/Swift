@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1B6CD25616D817D52FDEFE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 206A17214926EC4F840AAD90 /* libPods.a */; };
+		BC3000D61C99567E00D122D6 /* JWNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3000D51C99567E00D122D6 /* JWNetworking.swift */; };
 		BC7779D71C990EE6003120AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7779D61C990EE6003120AC /* AppDelegate.swift */; };
 		BC7779D91C990EE6003120AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7779D81C990EE6003120AC /* ViewController.swift */; };
 		BC7779DC1C990EE6003120AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC7779DA1C990EE6003120AC /* Main.storyboard */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		206A17214926EC4F840AAD90 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC70FF89FB4E7CC61CB7F80 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BC3000D51C99567E00D122D6 /* JWNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWNetworking.swift; sourceTree = "<group>"; };
 		BC7779D31C990EE5003120AC /* Swift_UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_UITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC7779D61C990EE6003120AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC7779D81C990EE6003120AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,8 @@
 		BC7779F61C990EE7003120AC /* Swift_UITableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_UITableViewUITests.swift; sourceTree = "<group>"; };
 		BC7779F81C990EE7003120AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC777A041C992664003120AC /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		BC777A121C994A37003120AC /* Swift_UITableView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift_UITableView-Bridging-Header.h"; sourceTree = "<group>"; };
+		F6C34354328F3F84D52FCC36 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B6CD25616D817D52FDEFE2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		523D50028970297B979B488B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6C34354328F3F84D52FCC36 /* Pods.debug.xcconfig */,
+				6BC70FF89FB4E7CC61CB7F80 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7276D917C35EFC880B9F50CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				206A17214926EC4F840AAD90 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC7779CA1C990EE5003120AC = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				BC7779EA1C990EE6003120AC /* Swift_UITableViewTests */,
 				BC7779F51C990EE7003120AC /* Swift_UITableViewUITests */,
 				BC7779D41C990EE5003120AC /* Products */,
+				523D50028970297B979B488B /* Pods */,
+				7276D917C35EFC880B9F50CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +133,8 @@
 				BC7779DF1C990EE6003120AC /* LaunchScreen.storyboard */,
 				BC7779E21C990EE6003120AC /* Info.plist */,
 				BC777A041C992664003120AC /* TableViewCell.swift */,
+				BC777A121C994A37003120AC /* Swift_UITableView-Bridging-Header.h */,
+				BC3000D51C99567E00D122D6 /* JWNetworking.swift */,
 			);
 			path = Swift_UITableView;
 			sourceTree = "<group>";
@@ -135,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC7779FB1C990EE7003120AC /* Build configuration list for PBXNativeTarget "Swift_UITableView" */;
 			buildPhases = (
+				44370B72C7CB42AA6EA953B8 /* Check Pods Manifest.lock */,
 				BC7779CF1C990EE5003120AC /* Sources */,
 				BC7779D01C990EE5003120AC /* Frameworks */,
 				BC7779D11C990EE5003120AC /* Resources */,
+				8F1F15832AB2D0B1274044C5 /* Embed Pods Frameworks */,
+				B49A923C6227935B6EEBCE82 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +286,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44370B72C7CB42AA6EA953B8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8F1F15832AB2D0B1274044C5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B49A923C6227935B6EEBCE82 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC7779CF1C990EE5003120AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +341,7 @@
 			files = (
 				BC777A051C992664003120AC /* TableViewCell.swift in Sources */,
 				BC7779D91C990EE6003120AC /* ViewController.swift in Sources */,
+				BC3000D61C99567E00D122D6 /* JWNetworking.swift in Sources */,
 				BC7779D71C990EE6003120AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,23 +482,30 @@
 		};
 		BC7779FC1C990EE7003120AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6C34354328F3F84D52FCC36 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Swift_UITableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-7K--.Swift-UITableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift_UITableView/Swift_UITableView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BC7779FD1C990EE7003120AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC70FF89FB4E7CC61CB7F80 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Swift_UITableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-7K--.Swift-UITableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift_UITableView/Swift_UITableView-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -488,6 +576,7 @@
 				BC7779FD1C990EE7003120AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC7779FE1C990EE7003120AC /* Build configuration list for PBXNativeTarget "Swift_UITableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +585,7 @@
 				BC777A001C990EE7003120AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC777A011C990EE7003120AC /* Build configuration list for PBXNativeTarget "Swift_UITableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +594,7 @@
 				BC777A031C990EE7003120AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -19,6 +19,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         createTableview()
         createRightBarButtonItem()
+        
+        NetworkingReq()
+    }
+    
+    // 网络请求
+    func NetworkingReq()
+    {
+        let manager = AFHTTPSessionManager()
+        let urlStr:String = "http://api.app.happyjuzi.com/v2.4/article/list/home?&page=1"
+        manager.GET(urlStr, parameters: nil, success: {(dataTask: NSURLSessionDataTask, responseObject: AnyObject?) -> Void in
+            // 打印
+            print(responseObject)
+            }) { (dataTask: NSURLSessionDataTask?, error: NSError) -> Void in
+            //
+        }
     }
     // 加右边的按钮
     func createRightBarButtonItem()
