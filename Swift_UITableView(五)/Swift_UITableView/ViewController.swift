@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var tableViewself = UITableView()
-    var arrayData = ["cell1", "cell2", "cell3", "cell4", "cell5"]
+    var arrayData = ["cell1", "cell2", "cell3", "cell4", "cell5", "cell1", "cell2", "cell3", "cell4", "cell5", "cell1", "cell2", "cell3", "cell4", "cell5"]
     var buttonRight = UIButton()
     override func viewDidLoad() {
         super.viewDidLoad()

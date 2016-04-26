@@ -51,7 +51,10 @@ class ViewController: UIViewController {
         for begin in genders1{
             print(begin)
         }
-        
+        // 或者
+        for (index, value) in genders1.enumerate(){
+            print("Item \(String(index + 1)): \(value)")
+        }
         // 字典的打印 key : value
         print(dic)  // ["coder": "I", "ios": "swfit"]
         // 字典的访问 键对应的值
